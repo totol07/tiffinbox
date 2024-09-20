@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffin Service Booking</title>
+    <link rel="stylesheet" href="meals.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Monthly Tiffin Service</h1>
+            <h2>Amba Tiffin Service</h2>
+            <p>Choose your meals for the month and book your service!</p>
+        </header>
+
+        <section class="meal-list">
+            <h2>Available Meals</h2>
+            <ul>
+                <li>
+                    <div class="meal-item">
+                        <img src="roti-removebg-preview.png" alt="Meal 1">
+                        <div class="meal-details">
+                            <h3>Meal 1</h3>
+                            <p>Includes rice, dal, vegetables, and salad.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="meal-item">
+                        <img src="meal2.jpg" alt="Meal 2">
+                        <div class="meal-details">
+                            <h3>Meal 2</h3>
+                            <p>Includes roti, paneer, vegetables, and dessert.</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- Add more meals as needed -->
+            </ul>
+        </section>
+
+        <section class="booking-form">
+            <h2>Book Your Tiffin Service</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                
+                <label for="phoneno">Phone No.:</label>
+                <input type="phoneno" id="phoneno" name="phoneno" required>
+
+                <label for="meal-selection">Select Your Meal Plan:</label>
+                <select id="meal-selection" name="meal-selection" required>
+                    <option value="meal1">Meal 1</option>
+                    <option value="meal2">Meal 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
